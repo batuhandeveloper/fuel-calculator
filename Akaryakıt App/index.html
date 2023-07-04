@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yakıt Satın Alma Hesaplayıcısı</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page-container">
+        <div class="form-container">
+          <h1>Yakıt Satın Alma Hesaplayıcısı</h1>
+          <form id="fuel-form">
+            <label for="yakit">Yakıt Türü:</label>
+            <select id="yakit" name="yakit">
+              <option value="1">Dizel</option>
+              <option value="2">Benzin</option>
+              <option value="3">LPG</option>
+            </select>
+    
+            <label for="litre">Alacağınız Litre:</label>
+            <input type="number" id="litre" name="litre">
+    
+            <label for="bakiye">Total Bakiye:</label>
+            <input type="number" id="bakiye" name="bakiye">
+    
+            <button type="button" onclick="hesapla()">Hesapla</button>
+          </form>
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
